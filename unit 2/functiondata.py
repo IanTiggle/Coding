@@ -35,3 +35,11 @@ def temperatureconvter(farenheit):
     celsius = (farenheit * 5/9) -32
     print("The temperature of " + str(celsius) + " degrees celsius is equal to " + str(farenheit) + " degrees farenheit.")
 temperatureconvter(100)
+
+
+
+def multiplication(num1):
+    product = num1 * 10
+    input("Enter a number: ")
+    print(str(num1) + "* " +  " = " + str(product))
+multiplication(10)
