@@ -7,8 +7,33 @@
 def quiz():
     questions = [
         {
+            "question": "How many data types are there?",
+            "options": ["1. 4", "2. 3", "3. 6", "4. 5"],
+            "answer": 1
+        },
+        {
+            "question": "What is a variable called?",
+            "options": ["1. Arguement", "2. Parameter", "3. String Concatination ", "4. Float"],
+            "answer": 2
+        },
+        {
+            "question": "What data type is this? 5.68",
+            "options": ["1. String", "2. Integer", "3. Float", "4. Boolean"],
+            "answer": 3
+        },
+        {
             "question": "What is the correct file extension for Python files?",
             "options": ["1. .pyth", "2. .pt", "3. .py", "4. .pyt"],
+            "answer": 3
+        },
+        {
+            "question": "What family is this tool from? >",
+            "options": ["1. Logical", "2. Comparison", "3. Arithmetic", "4. Assignment"],
+            "answer": 2
+        },
+        {
+            "question": "What is a condtional statement called?",
+            "options": ["1. While Loop", "2. For Loop", "3. If Else", "4. Function"],
             "answer": 3
         },
         {
@@ -31,6 +56,7 @@ def quiz():
             "options": ["1. x", "2. *", "3. %", "4. #"],
             "answer": 2
         }
+
     ]
 
     score = 0
