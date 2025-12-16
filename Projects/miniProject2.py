@@ -5,14 +5,14 @@ def gpa_calculator():
 
     for week in range(1, weeks + 1):
         while True:
-            try:
+            if subject.lower() in ["math", "science", "english"]:
                 grade = float(input(f"Enter the grade for week {week}: "))
                 if 0 <= grade <= 100:
                     total_grade += grade
                     break
                 else:
                     print("Please enter a valid grade between 0 and 100.")
-            except ValueError:
+            else:
                 print("Invalid input. Please enter a numerical grade.")
 
     average_grade = total_grade / weeks
