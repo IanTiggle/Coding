@@ -12,13 +12,12 @@ for word in keywords:
     print("we found this content for you: " + str(results))
 
 
-
 "My calculator should be able to subtract multiple numbers and give me the total."
 "My calculator should be able to divide multipe numbers and transform them into floats."
 "My calculator should be able to multiply multiple numbers and give me the total."
 
 def calculator():
-    operation = input("What would youj like to do? (add, subtract, multiply, divide) ")
+    operation = input("What would you like to do? (add, subtract, multiply, divide) ")
     if operation == "add":
         numbers = input("Enter numbers to add, separated by spaces: ")
         num_list = list(map(float, numbers.split()))
