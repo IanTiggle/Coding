@@ -4,6 +4,7 @@ def wordScrambler():
     wordpool = ["Latitude", " arithmetic", " sophisticated", " pyscosis"]
     correctWord = ""
     randomSelect = random.randint(0,3)
+    attempts = 0
     print(randomSelect)
 
     if randomSelect == 0:
@@ -25,8 +26,13 @@ def wordScrambler():
     userGuess = input("Please guess the correct word: ")
     while userGuess != correctWord:
         print("Incorrect password")
-    attempts += 1
-    print("number of attempts left:"  + str(attempts) +" / 3")
+        attempts += 1
+        print("number of attempts left:"  + str(attempts) +" / 3")
+        if attempts == 3:
+            print("You Lose!")
+            break
+        userGuess = input("Please guess the correct word: ")
     if userGuess == correctWord:
         print("You Win!")
+
 wordScrambler()
